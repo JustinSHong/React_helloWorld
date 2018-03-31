@@ -12,8 +12,16 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <!-- React app goes here: -->
 <script type="text/javascript">
+	// React will create an h1 with the following specs
 	const myElement = React.createElement('h1', {className:'heading'}, 'Hello World');
+	// myElement is an object with special properties
+	// React will use these props to create h1 in the DOM
 	console.log(myElement);
+	// pass myElement to the Virtual DOM
+	// ReactDOm is the library to target where our app will go
+		// this is done ONCE PER APPLICATION
+		// everything else is a child of this
+	ReactDOM.render(myElement, document.getElementById('target'));
 </script>
 
 </html>
