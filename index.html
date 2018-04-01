@@ -28,11 +28,7 @@
 	<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 	<!-- React app goes here: -->
 	<script type="text/babel">
-		const myElement = (
-			<div>
-				<h1>Hello USER</h1>
-			</div>
-		);
+		const MyElement = () => <h1>Hello World</h1>
 		const BasicComponent = () => {
 			return <h1>Hello World</h1>;
 		};
@@ -45,14 +41,15 @@
 		const Header = () => {
 			return <h1>Hello from React</h1>;
 		};
-		const App = () => {
+		const App = () => (
 			<div>
+				<MyElement />
 				<BasicButton />
 				<BasicInput />
 				<Header />
 			</div>
-		};
-		ReactDOM.render(myElement, document.getElementById('target'));
+		);
+		ReactDOM.render(<App />, document.getElementById('target'));
 	</script>
 </body>
 
