@@ -31,6 +31,7 @@
 		const Greeting = () => {
 			return <h1>Hello World</h1>;
 		}
+
 		const AboutMe = () => {
 			return(
 				<div>
@@ -38,12 +39,30 @@
 				</div>
 			);
 		}
+
+		const Skills = () => {
+			return (
+				<div>
+					<h3>Front-End Skills</h3>
+					<ul>
+						<li>HTML 5</li>
+						<li>CSS 3</li>
+						<li>LESS</li>
+						<li>React</li>
+						<li>Responsive Design</li>
+					</ul>
+				</div>
+			);
+		}
+
 		const App = () => (
 			<div>
 				<Greeting />
 				<AboutMe />
+				<Skills />
 			</div>
 		);
+
 		ReactDOM.render(<App />, document.getElementById('target'));
 	</script>
 </body>
