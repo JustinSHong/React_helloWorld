@@ -28,10 +28,20 @@
 	<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 	<!-- React app goes here: -->
 	<script type="text/babel">
-
+		const Greeting = () => {
+			return <h1>Hello World</h1>;
+		}
+		const AboutMe = () => {
+			return(
+				<div>
+					<p>My name is Justin and I am a LamdaSchool student.</p>
+				</div>
+			);
+		}
 		const App = () => (
 			<div>
-
+				<Greeting />
+				<AboutMe />
 			</div>
 		);
 		ReactDOM.render(<App />, document.getElementById('target'));
